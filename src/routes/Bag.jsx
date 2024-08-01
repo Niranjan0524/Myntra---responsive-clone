@@ -14,7 +14,7 @@ const Bag=()=>{
     return itemIndex>=0;
   });
 
-  console.log(bagItems);
+ 
     return  (
         <>
 <main>

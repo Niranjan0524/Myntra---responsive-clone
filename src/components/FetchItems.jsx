@@ -11,7 +11,10 @@ import { kidsItemsActions } from "../store/kidsItemsSlice.js";
 import { DEFAULT_ITEMS_KIDS } from "../data/kidsItems.js";
 import { homeAndLivingActions } from "../store/homeAndLiving.js";
 import { DEFAULT_ITEMS_HOME_LIVING } from "../data/homeAndLiving.js";
-
+import { storiesAction } from "../store/Stories.js";
+import {STORIES} from "../data/stories.js"
+import { influencersPicActions } from "../store/InfluencersPIc.js";
+import { INFLUENCERS_PIC } from "../data/InfluencersPic.js";
 const FetchItems=()=>{
 
     // const {currentlyFetching,fetchDone}=useSelector((store)=>store.fetchStatus);
@@ -44,6 +47,8 @@ const FetchItems=()=>{
         
 //  }, []); 
 
+    dispatch(influencersPicActions.addPic(INFLUENCERS_PIC))
+    dispatch(storiesAction.addStory(STORIES));
     dispatch(homeAndLivingActions.addItems(DEFAULT_ITEMS_HOME_LIVING));
     dispatch(womenItemsActions.addItems(DEFAULT_ITEMS_WOMEN));
     dispatch(menItemsActions.addItems(DEFAULT_ITEMS_MEN));

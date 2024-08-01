@@ -15,6 +15,9 @@ import BeautySection from './routes/BeautySection.jsx';
 import StudioSection from './routes/Studio.jsx';
 import WishList from './routes/WishList.jsx';
 import LoginSignup from './routes/Login_Signup.jsx';
+import ItemDescription from './routes/ItemDescription.jsx';
+
+
 const router=createBrowserRouter([
   {
     path:"/",
@@ -29,9 +32,11 @@ const router=createBrowserRouter([
       {path:"/beauty",element:<BeautySection/>},
       {path:"/studio",element:<StudioSection/>},
       {path:"/wishlist",element:<WishList/>},
-      {path:"/loginSignup",element:<LoginSignup/>}
+      {path:"/loginSignup",element:<LoginSignup/>},
+      {path:"/itemdescription",element:<ItemDescription/>}
     ]
-  }
+  },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

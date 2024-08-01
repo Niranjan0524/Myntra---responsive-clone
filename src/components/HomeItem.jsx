@@ -5,6 +5,8 @@ import { MdOutlineAddBox } from "react-icons/md";
 import { CiSquareRemove } from "react-icons/ci";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { wishListActions } from "../store/WishListSlice";
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const HomeItem=({item})=>{
 
@@ -52,28 +54,35 @@ const HomeItem=({item})=>{
     const handleLike=()=>{    
 
         if(finalItemStatus2()){
+            
           dispatch(wishListActions.removeFromWishList(item.id));
         }
         else{
+           
             dispatch(wishListActions.addToWishList(item.id)); 
         }   
     }
 
-    
 
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/itemdescription', { state: { item} });
+      };
     
 
     return (
         <>
         
-    <div className="item-container">
+    <div className="item-container"  >
+        
+            <div className="ss" onClick={handleClick}>
     <img className="item-image" src={item.image} alt="item image"/>
+    </div>
     <div className="flexing">
     <div className="rating">
         {item.rating.stars} ⭐ | {item.rating.count}
-
     </div>
-
+    
     <div className="LikeButton"> 
        { 
        finalItemStatus2()===false?
@@ -90,6 +99,7 @@ const HomeItem=({item})=>{
         <span className="discount">({item.discount_percentage}% OFF)</span>
     </div>
 
+    
     {
         finalItemStatus()===true ?
     

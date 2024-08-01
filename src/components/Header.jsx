@@ -6,6 +6,7 @@ import { useSyncExternalStore } from "react";
 import {useSelector}  from "react-redux";
 import { TbSearch } from "react-icons/tb";
 import Profile from "./Profile";
+import StudioBanner from "./StudioBanner";
 
 const Header=()=>{
 
@@ -24,7 +25,10 @@ const Header=()=>{
         <Link to ="/kids">Kids</Link >
         <Link to ="/homeandliving">Home & Living</Link >
         <Link to ="/beauty">Beauty</Link >
-        <Link to ="/studio">Studio <sup>New</sup></Link >
+        <Link to ="/studio" className="c1 " >Studio <sup>New</sup>
+        <StudioBanner></StudioBanner>
+        </Link >
+       
     </nav>
     <div className="search_bar">
         <span className="material-symbols-outlined search_icon"><TbSearch size={20}/></span>
