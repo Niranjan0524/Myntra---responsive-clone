@@ -16,7 +16,7 @@ import StudioSection from './routes/Studio.jsx';
 import WishList from './routes/WishList.jsx';
 import LoginSignup from './routes/Login_Signup.jsx';
 import ItemDescription from './routes/ItemDescription.jsx';
-
+import SavedItems from './routes/SavedItems.jsx';
 
 const router=createBrowserRouter([
   {
@@ -30,12 +30,23 @@ const router=createBrowserRouter([
       {path:"/kids",element:<KidsSection/>},
       {path:"/homeandliving",element:<HomeLivingSection/>},
       {path:"/beauty",element:<BeautySection/>},
-      {path:"/studio",element:<StudioSection/>},
+      // {path:"/studio",element:<StudioSection/>},
       {path:"/wishlist",element:<WishList/>},
       {path:"/loginSignup",element:<LoginSignup/>},
       {path:"/itemdescription",element:<ItemDescription/>}
     ]
   },
+  {
+    
+      path: "/studio",
+      element: <StudioSection />    
+    
+  },
+  {
+      path:"/studio/savedItems",
+      element:<SavedItems/>
+  }
+
   
 ]);
 

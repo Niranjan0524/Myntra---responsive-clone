@@ -62,7 +62,9 @@ const WishList=()=>{
 
                 {
                     
-                   finalItems.length===0? <div className="message"><center><p> Your Wishlist Is Empty.</p></center></div>: finalItems.map(Item => <WishListItem Item={Item} key={Item.id} /> )
+                   finalItems.length===0? <div className="message"><center><p> Your Wishlist Is Empty.</p></center></div>: 
+                   
+                   finalItems.map(Item => <WishListItem Item={Item} key={Item.id} /> )
                 }
             
             </div>

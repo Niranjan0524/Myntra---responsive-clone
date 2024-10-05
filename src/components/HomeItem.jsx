@@ -59,7 +59,7 @@ const HomeItem=({item})=>{
         }
         else{
            
-            dispatch(wishListActions.addToWishList(item.id)); 
+          dispatch(wishListActions.addToWishList(item.id)); 
         }   
     }
 

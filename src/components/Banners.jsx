@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 const Banners=({bannerName})=>{
 
-    const [itemBanner,setItemBanner]=useState("home");
+    // const [itemBanner,setItemBanner]=useState("home");
 
-    const setBanner=()=>{
-        setItemBanner(bannerName);
-    }
+    // const setBanner=()=>{
+    //     setItemBanner(bannerName);
+    // }
     
     useEffect(() => {
         

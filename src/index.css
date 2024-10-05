@@ -704,17 +704,20 @@ a.action_container:link {
 
 
 .loginPage{
- 
+  margin-left: 50%;
   width: 450px;
-  /* border-style: inset; */
+  
   margin:5% 35%;
   flex:content;
   min-height: 600px;
-  background-color: #faf8f8;
-  border-radius: 10px;
+  background-color: #fefefe;
+  
  height: fit-content;
- box-shadow:10px 10px 5px #676767;
+ box-shadow:0px 4px 8px #676767;
+ padding: 10px;
+ 
 }
+
 
 #loginImage{
   min-width:auto;
@@ -725,13 +728,16 @@ a.action_container:link {
 }
 .userInfo{
   padding: 20px;
+  position: relative;
 }
 
 label{
   
-margin: 10px 0 5px;
+margin: 5px 0 5px;
 text-align: left;
-
+color: #94969f;
+font-size:16px;
+font-weight: 500;
 }
 
 form {
@@ -739,15 +745,57 @@ form {
   flex-direction: column;
   flex: 1 0 140px;
 }
+.userInfo .iconName {
+  position: absolute;
+  top: 19%;
+  left: 90%;
+  transform: translateY(-50%);
+  color: #94969f;
+  
+}
+.userInfo .iconEmail {
+  position: absolute;
+  top: 40%;
+  left: 90%;
+  transform: translateY(-50%);
+  color: #94969f;
+  
+}
+.userInfo .iconContact {
+  position: absolute;
+  top: 63%;
+  left: 90%;
+  transform: translateY(-50%);
+  color: #94969f;
+  
+}
+
+.userInfo .iconPassword {
+  position: absolute;
+  top: 86%;
+  left: 90%;
+  transform: translateY(-50%);
+  color: #94969f;
+  
+}
 
 .loginPage input {
   padding: 3px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  margin-bottom: 7px;
+
+  /* border: 1px solid #ccc; */
+  border: none;
+  height: 40px;
+  border-bottom-style: solid;
+  border-color: #9a9a9a;
+  border-width: 1px;
   border-radius: 4px;
   width: 100%;
+  outline: none;
 }
-
+.loginPage input:hover{
+  background-color: #ffe9e9;
+}
 .x{
   margin:0px 40%;
   margin-bottom: 8px;
@@ -759,10 +807,20 @@ form {
 }
 
 .loginText:hover{
-  color: #0fd805;
+  color: #0026fa;
 }
 
+.labelsss{
+  font-weight: 600;
+  align-items: center;
+}
 
+.facebook{
+  width: 25px;
+}
+.iconsss{
+  margin-left: 10px;
+}
 /* itemDescriptionContainer */
 
 .row{
@@ -981,6 +1039,9 @@ form {
   margin-bottom: 2px;
 }
 
+
+
+
 /* StudioBanner */
 .sudioBanner{
   width: fit-content;
@@ -1059,18 +1120,19 @@ form {
   display: flex;
   justify-content: space-between;
  
-  padding: 6px 0px;
+  padding: 14px 0px;
   margin-bottom: 10px;
   z-index: 10;
   position: sticky;
   top: 0;
   background-color: #fff;
+  height: 50px;
   margin-top: 0px;
 }
 
 .nav_bar2{
   display: flex;
-  justify-content:space-evenly ;
+  justify-content:space-evenly;
   min-width: 200px;
   color: #000;
   font-weight: 500;
@@ -1156,7 +1218,7 @@ form {
 .addStory{
   position: absolute;
   bottom: 0px;
-  margin-bottom:7px ;
+  margin-bottom:8px ;
   margin-left: 2px;
 }
 .circle2:hover{
@@ -1263,8 +1325,8 @@ form {
 }
 
 .post{
-  min-height: 800px;
-  border-style: groove;
+  min-height: 900px;
+  /* border-style: groove; */
   margin-bottom: 4px;
   background-color:  #ffffff;
   z-index: 2;
@@ -1278,8 +1340,8 @@ form {
 }
 
 .profileImage{
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border-style: solid;
   border-color: #cbcaca;
@@ -1311,7 +1373,8 @@ form {
 }
 
 .dot{
-  color:gray ;
+  color:rgb(145, 145, 145) ;
+  margin-top: 4px;
 }
 
 .actualPostImage img{
@@ -1324,3 +1387,197 @@ form {
 
 }
 
+.shopAll{
+  min-width: 100px;
+  color: red;
+  /* border-style: groove; */
+  background-color: hsl(0, 0%, 97%);
+
+}
+
+
+.bagLogo{
+  margin-top:25px ;
+  margin-left: 35px;
+}
+.belowBagLogo{
+ /* margin-left: 15px;
+ 
+ margin-top: 25px; */
+ margin-left: 20px;
+ font-weight: 700;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ margin-top: 4px;
+}
+
+
+.productsToSale{
+  display: flex;
+  padding:10px 0px;
+ 
+}
+
+.ProductsContainer{
+  display: flex;
+  margin-left: 5px;
+  overflow-x: auto;
+  scrollbar-width: none;  /*For Firefox */
+  -ms-overflow-style: none;
+}
+
+.product{
+  min-width: 200px;
+  border-style: solid;
+  border-color: #c0c0c0;
+  border-width: 1px;
+  margin-right: 9px;
+  min-height: fit-content;
+  display: flex;
+}
+
+.ProductImage img{
+  width: 52px;
+  height: 70px;
+  margin: 5px 5px 5px 5px;
+  
+}
+
+.productPrice{
+  display: flex;
+  margin-top: 4px;
+}
+
+.offAndRatingSection{
+  display: flex;
+  justify-content:space-between;
+  margin-top: 4px;
+  
+}
+
+.productName{
+  font-size: 14px;
+  font-weight: 100;
+  color: #8f9094;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.currPrice{
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.origPrice{
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-top: 2px;
+  font-weight: 400;
+  color: #9f9a9a;
+}
+
+.offer{
+  color: red;
+  font-size: 13px;
+  font-weight: 600;
+
+}
+
+.rating{
+  margin-left: 20px;
+  /* padding: 3px; */
+}
+
+.star{
+  /* margin-bottom:10px ; */
+  /* padding-bottom: 10px; */
+  padding-top: 2px;
+  margin-left: 2px;
+  color: green;
+}
+
+img, svg {
+
+    vertical-align: text-top;
+}
+
+.reactionsDiv{
+  padding: 0px 4px;
+  display: flex;
+  justify-content: space-between;
+  /* border: solid; */
+}
+
+.leftSide{
+  display: flex;
+  /* justify-content: ; */
+  
+}
+
+.shareProduct{
+  margin-top: 1px;
+  margin-left: 30px;
+}
+
+.rightSide{
+  padding-right: 10px;
+}
+.tagsProduct{
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tagsAndPostInfo{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-size: small;
+  padding: 10px;
+}
+
+
+.headerSec2{
+  /* background-color: #c0c0c0; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  height: 60px;
+  text-decoration: none;
+  
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+
+}
+
+.firstStHalf2{
+  font-size: medium;
+  color: #adadad;
+  display: flex;
+  justify-content:space-evenly ;
+  min-width: 150px;
+  color: #000;
+  font-weight: 600;
+  
+  
+}
+
+.firstStHalf2 a{
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.savedImage{
+  background-color: #fbfbfb;
+}
+.savedPic {
+  width: 60%;
+  margin-top: 10%;
+  margin-left: 20%;
+  opacity: 0.75;
+  /* margin-right: 10%; */
+}
+
+.ss{
+  font-weight: 600;
+  font-size:x-large;
+  margin-top: 20px;
+}
+.pp{
+  padding: 5px 50px;
+  font-weight: 400;
+  color: #9a9a9a;
+  font-size: 14px;
+}

@@ -7,7 +7,7 @@ const WishListItem=({Item})=>{
         const dispatch=useDispatch();
         const handleDeleteClicked=()=>{
             dispatch(wishListActions.removeFromWishList(Item.id));
-            console.log("delete button clicked");
+            
           }
     
     return (<>
