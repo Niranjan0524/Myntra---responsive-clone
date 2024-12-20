@@ -99,7 +99,6 @@ const HomeItem=({item})=>{
         <span className="discount">({item.discount_percentage}% OFF)</span>
     </div>
 
-    
     {
         finalItemStatus()===true ?
     

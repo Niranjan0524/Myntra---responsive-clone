@@ -1,4 +1,4 @@
-import {configureStore, createSlice} from "@reduxjs/toolkit";
+import {configureStore} from "@reduxjs/toolkit";
 import itemSlice from "./itemSlice";
 import FetchStatusSlice from "./FetchStatusSlice";
 import bagSlice from "./BagSlice";
@@ -26,7 +26,6 @@ const myntraStore=configureStore({reducer:{
     stories:storiesSlice.reducer,
     influencersPic:influencersPicSlice.reducer,
 }
-
 })
 
 export default myntraStore;

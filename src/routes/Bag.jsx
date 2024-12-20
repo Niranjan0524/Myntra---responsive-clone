@@ -15,18 +15,18 @@ const Bag=()=>{
   });
 
  
-    return  (
+return  (
         <>
 <main>
-  <div className="bag-page">
-  {      
-    
-    bagItems.length == 0 ? 
-    <ShowEmptyBagMessage/> 
-    : 
-    <BagSummary/>
-  }
-    
+      <div className="bag-page">
+      {      
+        
+        bagItems.length == 0 ? 
+        <ShowEmptyBagMessage/> 
+        : 
+        <BagSummary/>
+      }
+      
       { 
       bagItems.length == 0 ? 
       <p></p>:
